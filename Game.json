@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Super Nova",
+    "cat": "Action",
+    "url": "https://example-game-link.com",
+    "img": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 2,
+    "title": "Logic Gate",
+    "cat": "Puzzle",
+    "url": "https://another-game.com",
+    "img": "https://via.placeholder.com/150"
+  }
+]
