@@ -168,5 +168,28 @@
     }, 3000);
 
 </script>
+/* Look for this tag near the bottom */
+<script>
+    
+    // REPLACE EVERYTHING FROM HERE...
+    const repo = [
+        { id: 1, title: "Nebula Runner", cat: "Action", url: "..." },
+        ...
+    ];
+    // ...TO HERE
+    
+    // WITH THIS:
+    const GITHUB_URL = "https://raw.githubusercontent.com/USERNAME/REPO/main/games.json";
+    let repo = []; 
+
+    async function loadRepo() {
+        const response = await fetch(GITHUB_URL);
+        repo = await response.json();
+        render(repo); 
+    }
+    loadRepo();
+
+    /* LEAVE THE REST OF THE FUNCTIONS (trackFPS, etc.) ALONE */
+</script>
 </body>
 </html>
